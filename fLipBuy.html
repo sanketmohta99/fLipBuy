@@ -1,0 +1,234 @@
+<!doctype html>
+<html>
+<head>
+<link rel = "icon" href ="https://lh3.googleusercontent.com/FA_rzaEeLlumm0qh68q3z5Pt-PGMVPf2Z28_pbega7SaXSiKjSzh-0MZceB3FpdvQIBq" type = "image/x-icon">
+
+ <title>fLipBuy</title>
+<link rel="stylesheet" type="text/css" href="fBuy.css">
+<!-- <style rel="stylesheet" link=> -->
+<script src="fB.js"> </script>
+</head>
+
+<body onload="myf()">
+
+
+
+<script>chgimg();</script>
+
+
+	<div id="sk">
+    <figure>
+		<img class="FK" src="https://www.searchpng.com/wp-content/uploads/2019/01/Flipart-Logo-Icon-PNG-Image.png" width="150px" onclick="loc1()" height="150px" >
+		<figcaption>
+		<pre><strong>fLipBuy</strong><span style="font-family:Arial;">
+     <small><em>just fLip it</em></small></span></pre>
+</figcaption>
+<figure>
+	</div>
+	<hr width="1150px" height="3px">
+
+	<div class="Search">
+		<label for="SKSearch" style="margin-left:30px;text-align:center;font-size:120%;"> Search fLipBuy: &nbsp;&nbsp;&nbsp;</label>
+		<input type="search" value="OnePlus Nord" id="SKSearch" name="SKSearch">
+		<!--&nbsp;&nbsp;&nbsp;-->
+		<button class="b" type=button" onclick="#" >fLip</button>
+	</div>
+	<br>
+	<br><br>
+
+	<div class="pname" onclick="loc2()">One Plus Nord</div>
+
+	<span id="Rat"> 4.4 &#x2b50; &emsp;20,548 ratings </span>
+	<hr width="1000px">
+	<br>
+
+  <!--ONe PLus NOrd IMAge-->
+
+	<div class="im ">
+	<img src="https://image01.oneplus.net/ebp/202007/06/1-m00-15-d2-rb8lb18cw9kapfouaawjvqw4rbo469_840_840.png" class="pdtimg zoom" id="pdtimg" onclick="loc2()">
+
+	<br><br><br>
+	<div class="radio " >
+
+		<script>
+				function chgimg()
+				{
+
+					if(document.getElementById("blue").checked)
+					{	document.getElementById("pdtimg").src="https://www.mytrendyphone.eu/images/OnePlus-Nord-5G-128GB-Blue-Marble-24072020-01-p.jpg";
+							document.getElementsByTagName("img")[1].setAttribute("width","65%");
+
+
+
+					}
+					else if(document.getElementById("onyx").checked)
+					{	document.getElementById("pdtimg").src="https://image01.oneplus.net/ebp/202007/06/1-m00-15-d2-rb8lb18cw9kapfouaawjvqw4rbo469_840_840.png";
+
+							}
+				}
+
+			</script>
+			&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<input type="radio" id="onyx" name="color" value="onyx" checked onclick="chgimg()">
+					<label for="onyx">Gray Onyx</label>
+
+			<input type="radio" id="blue" name="color" value="blue" onclick="chgimg()">
+					<label for="blue">Marble Blue</label>
+
+
+		</div>
+
+
+
+	</div>
+	<br>
+	<!--&emsp;&emsp;&emsp;-->&emsp;MRP: <span style="font-size:130%">  Rs <del>32,999</del></span>
+	<br>
+	<!--&emsp;&emsp;&emsp;-->&emsp;Price:<span style="font-size:150%">  <strong>Rs 29,999</strong></span>
+	<br>
+	<!--&emsp;&emsp;&emsp;-->&emsp;You Save:<span style="font-size:130%"> Rs <em>3000</em>&nbsp;(9%)</span>
+	<br>
+	&emsp;Deal ends in <span id="deal" style="font-size:130%;font-family:helvetica;color:darkred;"></span>
+
+  <script>
+
+	var t=new Date();
+		var f=new Date();
+			f.setHours(t.getHours()+4);
+			var p=f.getTime();
+			var x=setInterval( function() {
+						var z=new Date();
+						var k=z.getTime();
+						var dist=p-k;
+						var hrs=Math.floor((dist % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+						var mins = Math.floor((dist % (1000 * 60 * 60)) / (1000 * 60));
+						var secs = Math.floor((dist % (1000 * 60)) / 1000);
+
+document.getElementById("deal").innerHTML=hrs + "h " +mins+"m "+secs+"s ";
+	if(dist<0)
+		{		clearInterval(x);
+			alert("Deal ended");
+		}
+	},1000);
+
+
+
+
+
+
+	</script>
+	<br><br>
+	<!--&emsp;&emsp;&emsp;-->&emsp;<span><em>This is a <img src=https://ultra.news/wp-content/uploads/2014/06/downloadfile-5-1200x1200.png  width="23px"  height="30px" class="fL" >certified product and qualifies for free delivery</em></span>
+	<br>
+
+	<!--&emsp;&emsp;&emsp;-->&emsp;<em>Delivery by </em>&nbsp;<span id="DeliD" style="font-size:120%"></span> <span id="DeliM" style="font-size:120%"></span>
+	<script>dat();</script>
+
+	<!-- <form action="#"> -->
+	<br><br>
+
+
+	<table>
+		<tr>
+			<th> <label for="Name" style="font-family:Helvetica" >Full Name:</label>			</th>
+		 	<td> 	<input type="text" id="Name" name="Name" onblur="namecheck()" required class="inp" size="25px"> </td>
+			<td>   <span id="Nameprint"></span>   </td>
+		</tr>
+
+
+		<tr>
+			<th> <label for="Ph" style="font-family:Helvetica" >Phone No: </label>		</th>
+		 	<td> 	<input type="tel" id="Ph" name="Ph" onblur="phcheck()" pattern="[0-9]{10}" class="inp" maxlength="10" size="8px"> </td>
+			<td> 	<span id="PhPrint"></span>   </td>
+		</tr>
+
+
+		<tr>
+			<th> <label for="Add" style="font-family:Helvetica">Address:  </label> </th>
+		 	<td> 	<input type="text" id="Add" name="Add"  required class="inp" size="55px"> </td>
+		</tr>
+
+		<tr>
+			<th> <label for="Pin" style="font-family:Helvetica" >Pincode</th>
+		 	<td> 	<input type="text" id="Pin" name="Pin" class="inp" maxlength="6" size="3px"> </td>
+		</tr>
+
+		<tr>
+			<th> <label for="mail" style="font-family:Helvetica"> E-mail: </th>
+			<td> <input type="email" name="mail" class="inp" size="25px"> </td>
+		</tr>
+		<tr>
+			<th> <label for="Qty" style="font-family:Helvetica" > Quantity:	</th>
+		 	<td> 	<input type="number" id="Qty" name="Qty" min="1" max="10" value="1" class="inp">&nbsp;pc. </td>
+
+		<tr><td>&nbsp;</td></tr>
+		<tr><td>&nbsp;</td></tr>
+		<tr><td>&nbsp;</td></tr>
+		<tr>
+			<td colspan="2"><input type="radio" name="var" class="var" id="var">
+							<label for="variant" style="font-family:Helvetica;font-size:130%">6GB + 128 GB variant</label>
+			</td>
+		</tr>
+
+		<tr>
+			<td colspan="2"><input type="radio" name="var" class="var" id="var">
+							<label for="variant" style="font-family:Helvetica;font-size:130%">6GB + 256 GB variant</label>
+			</td>
+		</tr>
+
+		<tr>
+			<td colspan="2"><input type="radio" name="var" class="var" id="var">
+							<label for="variant" style="font-family:Helvetica;font-size:130%">8GB + 256 GB variant</label>
+			</td>
+		</tr>
+
+
+		</table>
+		<br><br>
+		&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+		<button type="button" onclick="output()" class="Sub" >BUY</button>
+
+
+
+
+
+
+
+		<!--<span style="font-size:130%;float:right">I agree to the terms and conditions of Flipbuy	 and shall abide by them.</span><input type="checkbox" style="font-size:130%;float:right" value="true" name="T&C" id="T&C">&nbsp;-->
+
+
+
+	<div class="promo">
+	<img src="https://images-eu.ssl-images-amazon.com/images/G/31/img20/Wireless/Avicii/July/LaunchLP21/PC/Desktop_02_KSP.jpg" width="100%" height="450px">
+	<img src="https://images-eu.ssl-images-amazon.com/images/G/31/img20/Wireless/Avicii/July/LaunchLP21/PC/Desktop_03_Colors.jpg" width="100%" height="1400px">
+	<img src="https://images-eu.ssl-images-amazon.com/images/G/31/img20/Wireless/Avicii/July/LaunchLP21/PC/Desktop_05_OSPerformance.jpg" width="100%" height="5500px">
+	<img src="https://images-eu.ssl-images-amazon.com/images/G/31/img20/Wireless/Avicii/3rd_july/LP_desktop_Rev/amazon_pre_launch_page_desktop_01_10.jpg" width="100%" height="600px">
+	</div>
+
+
+	<!-- </form> -->
+	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+	<div class="ka">
+	<ul class="nav">
+		<li><a href="#">fLipBuy Home</a></li>
+		<li><a href="#">About Us</a></li>
+		<li><a href="#">Steal Deals <span style="font-size:180%;"> &#8687;</span>	</a>
+				 <div class="dd">
+					 <ul >
+					<li> <a href="#"> Smartphones</a></li>
+					<li> <a href="#"> Watches </a></li>
+					<li> <a href="#"> Books </a></li>
+					<li> <a href="#"> Laptops </a></li>
+					</ul>
+				<div>
+		</li>
+		<li><a href="#">Contact Us</a></li>
+	</ul>
+	</div>
+
+	<div class="k" id="l"></div>
+
+
+</body>
+</html>
